@@ -11,7 +11,6 @@ module.exports = {
     ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
-    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=PT+Serif' }]
   ],
   themeConfig: {
     nav: [
