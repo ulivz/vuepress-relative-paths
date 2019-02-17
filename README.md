@@ -6,10 +6,10 @@
 
 The following are all scenes in VuePress that involve referencing another markdown file via `relative path`:
 
-- [From normal page to normal page](./normal.md#from-normal-page-to-normal-page)
-- [From normal page to permalink page](./normal.md#from-normal-page-to-permalink-page)
-- [From permalink page to normal page](./permalink.md#from-permalink-page-to-normal-page)
-- [From permalink page to permalink page](./permalink.md#from-permalink-page-to-permalink-page)
+- [From normal page to normal page](./normal.md#from-normal-page-to-normal-page);
+- [From normal page to permalink page](./normal.md#from-normal-page-to-permalink-page);
+- [From permalink page to normal page](./permalink.md#from-permalink-page-to-normal-page);
+- [From permalink page to permalink page](./permalink.md#from-permalink-page-to-permalink-page).
 
 ## Notes
 
