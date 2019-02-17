@@ -33,7 +33,7 @@ sidebar: auto
 The final route path of `permalink.html` will be `/foo/bar/`, this looks great, but the problem is coming: when you want to write a relative path to link to another page in `permalink.md`, such as:
 
 ```markdown
-[Go to `(./normal.md)`](./normal.md)
+[Go to `./normal.md`](./normal.md)
 ```
 
 In a lower version of VuePress, above markdown file will be transformed into following markup:
@@ -47,10 +47,10 @@ It means that the relative path will be resolved by vue-router at runtime, since
 A workaround of this issue is to use absolute path at your source code:
 
 ```markdown
-[Go to `(normal.md)`](/normal.md)
+[Go to `normal.md`](/normal.md)
 ```
 
-But in this case, you will lose a feature that many programmers would like very much in coding or writing documents —— [**"Ctrl+Click Go To Definition"**](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition), so the best is that VuePress could help us to transform the relative path to correct absolute path during the build process.
+But in this case, you will lose some very useful features —— [**"Ctrl+Click Go To Definition"**](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition), as well as the automatic correction of file path when the referenced file moves, so the best is that VuePress could help us to transform the relative path to correct absolute path during the build process.
 
 **Of course, VuePress did it!** for now you're free to use relative paths in VuePress. 
 

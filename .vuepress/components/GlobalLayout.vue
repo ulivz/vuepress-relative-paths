@@ -42,6 +42,7 @@ header
       display inline-block
     .title
       font-family Arial
+      font-weight 100
       margin 1rem 1.5rem 0 1.5rem
       font-size 13px
       text-transform uppercase
