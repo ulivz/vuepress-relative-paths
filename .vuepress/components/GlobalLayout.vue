@@ -33,7 +33,8 @@
 header
   height 80px
   background-color #333
-  font-family: 'Slabo 27px', serif;
+  font-family 'Slabo 27px', serif
+  text-align right
   .left
     font-size 30px
   .right
