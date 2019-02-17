@@ -1,6 +1,5 @@
 ---
 permalink: /foo/bar/
-sidebar: auto
 ---
 
 # permalink.md 

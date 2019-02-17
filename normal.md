@@ -1,5 +1,5 @@
 ---
-sidebar: auto
+headerTitle: 123
 ---
 
 # normal.md 

@@ -1,3 +1,5 @@
+
+
 # Relative Paths in VuePress
 
 ## Scenes
@@ -11,7 +13,7 @@ The following are all scenes in VuePress that involve referencing another markdo
 
 ## Notes
 
-1. All above usages are only valid under `>= vuepress@v1.0.0-alpha.39`.
+All above usages are only valid under `>= vuepress@v1.0.0-alpha.39`.
 
 ## Background
 
@@ -19,12 +21,12 @@ Since VuePress 1.x supports [permalinks](https://vuepress.vuejs.org/guide/permal
  
 Let us give a practical example, you have a markdown file named `permalink.md` in your document's source directory, the default route path that you'll get at the dev server or production will be `permalink.html`, once you set the permalink as follows:
 
-```markdown
+````markdown
 ---
 permalink: /foo/bar/
 sidebar: auto
 ---
-```
+````
 
 The final route path of `permalink.html` will be `/foo/bar/`, this looks great, but the problem is coming: when you want to write a relative path to link to another page in `permalink.md`, such as:
 
@@ -46,9 +48,23 @@ A workaround of this issue is to use absolute path at your source code:
 [Go to `(normal.md)`](/normal.md)
 ```
 
-But in this case, you will lose a feature that programmers like very much in writing documents —— **"Ctrl+Click Go To Definition"**, so the best is to let VuePress help us to transform the relative path to the absolute path conversion directly during the build process.
+But in this case, you will lose a feature that many programmers like very much in writing documents —— [**"Ctrl+Click Go To Definition"**](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition), so the best is that VuePress could help us to transform the relative path to correct absolute path during the build process.
 
-**Of course, VuePress did it**, for now you're free to use relative paths in VuePress. The motivation of introducing the above background is that you need to know that once you use relative paths, You don't have to care about the path of your production environment. and don't nedd worry about it maybe goes 404, just enjoy your documentation!
+**Of course, VuePress did it!** for now you're free to use relative paths in VuePress. 
 
+The motivation of introducing the above background is that you need to know that once you use relative paths, you don't have to care about the paths of production environment. and also needn't worry about it maybe goes 404.
+ 
+Just enjoy your documentation!
+
+## Refs
+
+- [#1227: issue: page links failed in pages that use permalink](https://github.com/vuejs/vuepress/issues/1227)
+- [#1298: fix($core): cannot use relative path in pages that use permalink](https://github.com/vuejs/vuepress/issues/1227)
+- [VuePress's Documentation](https://vuepress.vuejs.org/)
+<li>
+<a href="https://github.com/ulivz/vuepress-relative-paths" target="_blank" rel="noopener noreferrer" class="repo-link">
+GitHub
+<OutboundLink/></a>
+</li>
 
 
