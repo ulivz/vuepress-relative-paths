@@ -1,7 +1,3 @@
----
-headerTitle: 123
----
-
 # normal.md 
 
 - `permalink`: undefined
