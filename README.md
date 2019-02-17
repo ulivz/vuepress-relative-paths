@@ -50,11 +50,11 @@ A workaround of this issue is to use absolute path at your source code:
 [Go to `(normal.md)`](/normal.md)
 ```
 
-But in this case, you will lose a feature that many programmers like very much in writing documents —— [**"Ctrl+Click Go To Definition"**](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition), so the best is that VuePress could help us to transform the relative path to correct absolute path during the build process.
+But in this case, you will lose a feature that many programmers would like very much in coding or writing documents —— [**"Ctrl+Click Go To Definition"**](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition), so the best is that VuePress could help us to transform the relative path to correct absolute path during the build process.
 
 **Of course, VuePress did it!** for now you're free to use relative paths in VuePress. 
 
-The motivation of introducing the above background is that you need to know that once you use relative paths, you don't have to care about the paths of production environment. and also needn't worry about it maybe goes 404.
+The motivation of introducing the above background is that you need to know that once you use relative paths, you don't have to care about the paths of production environment. and also needn't worry about it may goes 404.
  
 Just enjoy your documentation!
 
