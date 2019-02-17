@@ -1,12 +1,8 @@
----
-sidebar: auto
----
-
-# Relative paths in VuePress
+# Relative Paths in VuePress
 
 ## Scenes
 
-This is all scenes in VuePress that involve referencing markdown file via `relative path`:
+The following are all scenes in VuePress that involve referencing another markdown file via `relative path`:
 
 - [From normal page to normal page](./normal.md#from-normal-page-to-normal-page)
 - [From normal page to permalink page](./normal.md#from-normal-page-to-permalink-page)
@@ -30,7 +26,7 @@ sidebar: auto
 ---
 ```
 
-The final route path of `permalink.html` will be `/foo/bar/`, this looks great, but the problem is coming: when you want to write a relative path to link to another page in `permalink.html`, such as:
+The final route path of `permalink.html` will be `/foo/bar/`, this looks great, but the problem is coming: when you want to write a relative path to link to another page in `permalink.md`, such as:
 
 ```markdown
 [Go to `(./normal.md)`](./normal.md)
@@ -42,8 +38,17 @@ In a lower version of VuePress, above markdown file will be transformed into fol
 <router-link to="./normal.html"></router-link>
 ```
 
-Since VuePress used vue-router to resolve the relative path at runtime, the resolved path will be `/foo/bar/normal.html`, which will let you to get a 404.
+It means that the relative path will be resolved by vue-router at runtime, since current `location.pathname` is `/foo/bar/`, the resolved path will be `/foo/bar/normal.html`, which will let you to get a 404.
 
-**Of course, the above issue has been addressed in the lastest version of VuePress**, you're free to use relative paths in VuePress. The motivation of introducing the above background is that you need to know that once you use relative paths, VuePress will automatically convert it to the correct absolute path during the build process.
+A workaround of this issue is to use absolute path at your source code:
+
+```markdown
+[Go to `(normal.md)`](/normal.md)
+```
+
+But in this case, you will lose a feature that programmers like very much in writing documents —— **"Ctrl+Click Go To Definition"**, so the best is to let VuePress help us to transform the relative path to the absolute path conversion directly during the build process.
+
+**Of course, VuePress did it**, for now you're free to use relative paths in VuePress. The motivation of introducing the above background is that you need to know that once you use relative paths, You don't have to care about the path of your production environment. and don't nedd worry about it maybe goes 404, just enjoy your documentation!
+
 
 
