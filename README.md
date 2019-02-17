@@ -1,4 +1,6 @@
-
+---
+metaTitle: Relative Paths in VuePress
+---
 
 # Relative Paths in VuePress
 
