@@ -1,4 +1,7 @@
 ---
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ulivz/vuepress-relative-paths.svg)](https://greenkeeper.io/)
+
 metaTitle: Relative Paths in VuePress
 ---
 
