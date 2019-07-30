@@ -10,6 +10,6 @@
     "build": "vuepress build ."
   },
   "devDependencies": {
-    "vuepress": "1.0.0-alpha.39"
+    "vuepress": "1.0.3"
   }
 }
